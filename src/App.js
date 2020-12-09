@@ -166,7 +166,6 @@ export default function App() {
   function emojiClickHandler(emoji) {
     var meaning = emojiDictionary[emoji];
     setEmojiMeaning(meaning);
-    return "box active";
   }
   return (
     <div className="App">
@@ -179,7 +178,7 @@ export default function App() {
         <span style={{ color: "white" }}> Mr.{meaning}</span>
       </h2>
       <div>
-        <h3>Click On Us</h3>
+        <h3 style={{ textDecoration: "underline" }}>Click On Us</h3>
         <ul>
           {zoomojis.map(function (emoji, index) {
             return (
